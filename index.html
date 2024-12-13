@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cTrader Bot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #e0eafc, #cfdef3);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(120deg, #007ACC, #005999);
+            color: white;
+            padding: 2rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffdd57;
+        }
+        section {
+            padding: 3rem;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #007ACC;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #007ACC;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background-color: #005999;
+            transform: scale(1.05);
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(120deg, #333, #222);
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #007ACC;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #005999;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>cTrader Bot</h1>
+    <nav>
+        <a href="#about">Über den Bot</a>
+        <a href="#features">Leistungen</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>Über den Bot</h2>
+    <p>Unser cTrader-Bot bietet eine automatisierte Handelslösung, die auf zuverlässigen Algorithmen basiert und Ihnen dabei hilft, das Beste aus Ihren Investments herauszuholen.</p>
+    <a href="#features" class="button">Mehr erfahren</a>
+</section>
+
+<section id="features">
+    <h2>Leistungen</h2>
+    <ul>
+        <li>Präzise Marktanalysen in Echtzeit</li>
+        <li>Automatisierte Handelsstrategien</li>
+        <li>Maximierung der Rendite bei minimalem Aufwand</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <p>Haben Sie Fragen oder möchten Sie mehr erfahren? Schreiben Sie uns eine Nachricht!</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Absenden</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 cTrader Bot. Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>

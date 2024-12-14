@@ -1,9 +1,45 @@
-#header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 2px black solid;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-#header a{
-    color: hotpink;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Flexibilität für kleinere Geräte */
+}
+
+nav ul li {
+    margin: 10px 15px; /* Mehr Abstand für kleine Geräte */
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
+}
+
+/* Für Tablets (768px und kleiner) */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 5px 10px; /* Reduziertes Padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Navigation untereinander */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
 }

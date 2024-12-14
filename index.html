@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch My Bot!</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="UI/header.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Include Header -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("UI/header.html");
+        });
+    </script>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#about">Über den Bot</a></li>
-            <li><a href="#features">Funktionen</a></li>
-            <li><a href="#demo">Demo</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="header"></div> <!-- Header-Div -->
 
-<section id="hero">
-    <div class="hero-content">
-        <h1>Willkommen bei cTrader Bot</h1>
+<!-- Hero-Section -->
+<header class="hero">
+    <div class="container">
+        <h1>Willkommen zu WatchMyBot</h1>
         <p>Der leistungsstarke Trading-Bot für den automatisierten Handel.</p>
         <a href="#contact" class="cta-button">Jetzt ausprobieren</a>
     </div>
-</section>
+</header>
+
+
 
 <section id="about">
-    <h2>Über den cTrader Bot</h2>
-    <p>Unser cTrader Bot nutzt fortschrittliche Algorithmen, um den Handel zu optimieren und dir dabei zu helfen, das Beste aus deinen Investitionen herauszuholen.</p>
+    <div id="about-box">
+        <h3>Über den cTrader Bot</h3>
+        <p>Unser cTrader Bot nutzt fortschrittliche Algorithmen, um den Handel zu optimieren und dir dabei zu helfen, das Beste aus deinen Investitionen herauszuholen.</p>
+    </div>
 </section>
 
 <section id="features">
@@ -49,15 +58,9 @@
         </div>
     </div>
 </section>
-<!--
-<section class="demo">
-    <h2>Live-Demo</h2>
-    <div class="demo">
-        <iframe src="https://ct.spotware.com/copy/strategy/92234" style="border:0px #ffffff none;" name="myiFrame" scrolling=no frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
-    </div>
-</section>
--->
 
+
+<!-- cTrader Embed -->
 <div id="ctrader-plugin-root" style="width: 100%; height: 1000px; position: relative"></div>
 <script id="init" type="text/javascript" defer src="https://ct.spotware.com/widget.js"></script>
 <script type="text/javascript">
@@ -84,9 +87,9 @@
 </section>
 
 <footer>
-    <p>&copy; 2024 cTrader Bot - Alle Rechte vorbehalten</p>
+    <p>&copy; 2024 Julian Einzinger - Alle Rechte vorbehalten</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

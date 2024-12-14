@@ -1,40 +1,9 @@
-/* Allgemeine Stile (bleiben größtenteils unverändert) */
+/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Flexibilität für kleinere Geräte */
-}
-
-nav ul li {
-    margin: 10px 15px; /* Mehr Abstand für kleine Geräte */
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-#hero {
-    background-color: #009688;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
 }
 
 .cta-button {
@@ -44,6 +13,45 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
 }
+
+
+/* Hero-Bereich */
+.hero {
+    background: linear-gradient(to right, #02ccb7, #00423a);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
 
 section {
     padding: 20px;
@@ -67,6 +75,23 @@ section {
     max-width: calc(33.333% - 40px); /* Begrenzung */
     margin: 10px; /* Abstand bei Wrap */
     text-align: center;
+}
+
+.feature:hover{
+    scale: 1.15;
+    transition: .3s;
+}
+
+#about-box{
+    background: linear-gradient(to right, #02ccb7, #00423a);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Dynamische Breite */
+    max-width: 67%; /* Begrenzung */
+    text-align: center;
+    margin: auto
 }
 
 form {
@@ -118,10 +143,6 @@ footer {
         flex: 1 1 90%;
     }
 
-    nav ul li {
-        margin: 5px 10px; /* Reduziertes Padding */
-    }
-
     #hero {
         padding: 30px 10px;
     }
@@ -129,19 +150,6 @@ footer {
 
 /* Für Smartphones (480px und kleiner) */
 @media (max-width: 480px) {
-    header {
-        padding: 5px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Navigation untereinander */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
     #hero h1 {
         font-size: 1.5rem; /* Kleinere Schriftgröße */
     }

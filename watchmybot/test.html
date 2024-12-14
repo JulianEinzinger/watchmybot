@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cBot - Dein moderner Assistent</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="UI/header.css">
+    <!-- Include Header -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("UI/header.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+<header class="hero">
+    <div class="container">
+        <h1>Willkommen zu cBot</h1>
+        <p>Dein persönlicher, intelligenter Assistent für jede Aufgabe.</p>
+        <button id="learn-more">Mehr erfahren</button>
+    </div>
+</header>
+
+<section class="features">
+    <div class="container">
+        <h2>Funktionen</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Intelligent</h3>
+                <p>cBot lernt und passt sich deinen Bedürfnissen an.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Einfach zu bedienen</h3>
+                <p>Intuitive Steuerung, perfekt für jeden Anwender.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Leistungsstark</h3>
+                <p>Erledige Aufgaben schneller und effizienter.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about hidden" id="about-cbot">
+    <div class="container">
+        <h2>Über cBot</h2>
+        <p>Der cBot wurde entwickelt, um dir bei alltäglichen Aufgaben zu helfen. Mit einer leistungsstarken KI und einem klaren Design macht er das Leben einfacher.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 cBot. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('learn-more').addEventListener('click', function() {
+        const aboutSection = document.getElementById('about-cbot');
+        aboutSection.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>

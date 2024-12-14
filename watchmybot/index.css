@@ -94,6 +94,10 @@ section {
     margin: auto
 }
 
+/* Newsletter-Formular */
+#contact{
+    text-align: center;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -116,6 +120,7 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 104%;
 }
 
 form button:hover {

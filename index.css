@@ -1,4 +1,4 @@
-/* styles.css */
+/* Allgemeine Stile (bleiben größtenteils unverändert) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,11 +16,13 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Flexibilität für kleinere Geräte */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 10px 15px; /* Mehr Abstand für kleine Geräte */
 }
 
 nav ul li a {
@@ -31,7 +33,7 @@ nav ul li a {
 #hero {
     background-color: #009688;
     color: white;
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -45,12 +47,15 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 1200px; /* Begrenzung der Breite */
 }
 
 .features {
     display: flex;
     justify-content: space-around;
+    gap: 20px; /* Abstand zwischen den Features */
+    flex-wrap: wrap; /* Wrap für kleinere Bildschirme */
 }
 
 .feature {
@@ -58,17 +63,17 @@ section {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
-
-.chart-container {
-    width: 80%;
-    margin: 0 auto;
+    flex: 1 1 calc(33.333% - 40px); /* Dynamische Breite */
+    max-width: calc(33.333% - 40px); /* Begrenzung */
+    margin: 10px; /* Abstand bei Wrap */
+    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    max-width: 600px; /* Begrenzung */
+    margin: 0 auto;
 }
 
 form input, form textarea {
@@ -76,6 +81,7 @@ form input, form textarea {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
 form button {
@@ -98,8 +104,62 @@ footer {
     padding: 10px;
 }
 
-.demo div {
-    background-color: #333;
-    height: 400px;
-    width: 90%;
+/* --- Media Queries für Responsiveness --- */
+
+/* Für Tablets (768px und kleiner) */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Features untereinander anordnen */
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 90%; /* Breite auf kleine Geräte anpassen */
+        flex: 1 1 90%;
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Reduziertes Padding */
+    }
+
+    #hero {
+        padding: 30px 10px;
+    }
+}
+
+/* Für Smartphones (480px und kleiner) */
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Navigation untereinander */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem; /* Kleinere Schriftgröße */
+    }
+
+    .cta-button {
+        padding: 8px 15px; /* Kleinere Buttons */
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.8rem; /* Kleinere Schrift im Footer */
+    }
 }

@@ -13,7 +13,7 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     };
 
     // POST-Anfrage an den Server senden
-    fetch('http://185.253.17.65:8080', {
+    fetch('https://185.253.17.65:8080', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json' // Datenformat JSON

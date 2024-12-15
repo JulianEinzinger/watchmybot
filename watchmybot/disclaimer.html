@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haftungsausschuss</title>
+
+    <link rel="stylesheet" href="disclaimer.css">
+    <link rel="stylesheet" href="UI/header.css">
+    <link rel="stylesheet" href="UI/footer.css">
+
+    <!-- Include Header -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("UI/header.html");
+            $("#footer").load("UI/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- Hero-Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Haftungsausschuss</h1>
+        </div>
+    </header>
+
+    <section id="disclaimer">
+        <div class="container">
+            <div class="element">
+                <h3>Risikohinweis</h3>
+                <p>Der Handel mit Wertpapieren und Finanzinstrumenten und somit auch das Folgen
+                    eines Bots, kann Ihr Kapital erheblichen Risiken aussetzen, unter Umständen auch über das
+                    eingesetzte Kapital hinaus. Vergangene positive Performance ist keine Garantie für zukünftige
+                    Gewinne. Die hier gezeigten Analysen und Renditeverläufe unserer Bots stellen keine
+                    Anlageberatung dar und sind daher auch keine Aufforderung und keine Empfehlung zum Folgen
+                    unserer Bots und somit auch nicht zum Handel von Finanzinstrumenten durch Kopieren
+                    unserer Strategien. Bereitgestellte Analysen, Renditeverläufe und Erklärungen sind
+                    ausschließlich zur Information bestimmt. Eine Haftung für mittelbare und unmittelbare Folgen
+                    aus diesen Vorschlägen und Informationen ist somit ausgeschlossen.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+</body>
+</html>

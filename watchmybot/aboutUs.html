@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Über uns</title>
+
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="UI/header.css">
+    <link rel="stylesheet" href="UI/footer.css">
+
+    <!-- Include Header -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("UI/header.html");
+            $("#footer").load("UI/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- Hero-Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Über uns</h1>
+            <p></p>
+        </div>
+    </header>
+
+    <section id="aboutUs">
+        <div class="container">
+            <div class="element">
+                <img src="imgs/papa.jpg" alt="Klaus Einzinger">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="element">
+                <img src="imgs/julian.jpg" alt="Julian Einzinger">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+</body>
+</html>

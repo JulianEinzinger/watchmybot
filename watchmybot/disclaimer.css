@@ -10,7 +10,7 @@ body {
 
 /* Hero-Bereich */
 .hero {
-    background: linear-gradient(to right, #b3b0b0, #424141);
+    background: linear-gradient(to right, #fb2d2d, #490202);
     color: white;
     text-align: center;
     padding: 20px 20px;
@@ -23,7 +23,7 @@ body {
 
 #disclaimer {
     height: 100%;
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 html,body{
@@ -40,4 +40,8 @@ html,body{
     max-width: 75%; /* Begrenzung */
     margin: auto; /* Abstand bei Wrap */
     text-align: center;
+}
+
+.element h3{
+    color: #ae0000;
 }

@@ -36,11 +36,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
-    background-color: #333;
-    color: #fff;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -89,7 +84,7 @@ section {
 
 .faq-item:hover {
     scale: 1.05;
-    transition: transform 0.3s ease;
+    transition: .3s ease;
 }
 
 
@@ -104,5 +99,9 @@ section {
 
     section {
         padding: 10px;
+    }
+
+    .faq-item:hover {
+
     }
 }

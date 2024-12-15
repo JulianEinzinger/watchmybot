@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="UI/header.css">
+    <link rel="stylesheet" href="UI/footer.css">
+
+    <!-- Include Header -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("UI/header.html");
+            $("#footer").load("UI/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div> <!-- Header-Div -->
+
+    <!-- Hero-Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>FAQ</h1>
+            <p>Häufig gestellte Fragen</p>
+        </div>
+    </header>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Fragen und Antworten</h2>
+            <div class="faq-item">
+                <h3>Frage 1</h3>
+                <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
+            </div>
+            <div class="faq-item">
+                <h3>Frage 2</h3>
+                <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
+            </div>
+            <div class="faq-item">
+                <h3>Frage 3</h3>
+                <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
+            </div>
+            <div class="faq-item">
+                <h3>Frage 4</h3>
+                <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div> <!-- Footer-Div -->
+</body>
+</html>

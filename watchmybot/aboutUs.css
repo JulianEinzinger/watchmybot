@@ -27,9 +27,10 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33.333% - 40px); /* Dynamische Breite */
-    max-width: calc(33.333% - 40px); /* Begrenzung */
+    /*max-width: calc(33.333% - 40px); /* Begrenzung */
+    width: 80rem;
+    height: 18rem;
     margin: auto;
-    text-align: center;
 }
 
 .element img{

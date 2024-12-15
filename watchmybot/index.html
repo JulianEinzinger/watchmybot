@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch My Bot!</title>
+
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="UI/header.css">
+    <link rel="stylesheet" href="UI/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Include Header -->
@@ -17,6 +19,7 @@
     <script>
         $(function(){
             $("#header").load("UI/header.html");
+            $("#footer").load("UI/footer.html");
         });
     </script>
 </head>
@@ -27,7 +30,7 @@
 <header class="hero">
     <div class="container">
         <h1>WatchMyBot</h1>
-        <p>Excellent Trading Bots (Börsenroboter) for everyone to follow!</p>
+        <p>Excellent Trading Bots for everyone to follow!</p>
         <!-- <a href="#contact" class="cta-button">Jetzt ausprobieren</a> -->
     </div>
 </header>
@@ -37,9 +40,8 @@
 <section id="about">
     <div id="about-box">
         <h3>Was ist ein Trading Bot?</h3>
-        <p>Ein Trading Bot ist ein automatisiertes Handelsprogramm, das völlig autonom an einer
-            Börse <b>Käufe</b> und <b>Verkäufe</b> durchführt. Der Mensch beeinflusst dabei nur zu Beginn beim
-            Erstellen des Programmiercodes, nach welchen Kriterien der Bot seine
+        <p>Ein automatisiertes Handelsprogramm, das völlig autonom an einer
+            Börse <b>Käufe</b> und <b>Verkäufe</b> durchführt. Im Programmiercode kann ein Mensch festlegen, nach welchen Kriterien der Bot seine
             Handelsentscheidungen trifft.</p>
     </div>
 </section>
@@ -49,27 +51,42 @@
     <div class="features">
         <div class="feature">
             <h3>Development</h3>
-            <p>Wir setzen kreative Handelsideen in Programmiercode um. Dazu berechnen wir
-                sämtliche Kennzahlen und analysieren immer wieder die Charttechnik. Zudem
-                orientieren wir uns an der zeitlich übergeordneten Statistik und beobachten,
-                wie sich der Markt gerade technisch verhält und bewegt. Daraus entwickeln wir
+            <p>Wir setzen kreative Handelsideen in Programmiercode um. Dabei werden
+                viele Kennzahlen berechnet und die Charttechnik immer wieder analysiert. Die zeitlich übergeordnete
+                Statistik ist genauso entscheidend wie die Überwachung der aktuellen Marktbewegung. Daraus entwickeln wir
                 eigene Strategien, die wir in einem eigenen Bot für genau einen Basiswert wie
-                z.B. einen Aktienindex oder einer Aktie oder einem Währungspaar maßgeschneidert
+                z.B. einen Aktienindex, einer Aktie oder einem Währungspaar maßgeschneidert
                 verpacken.</p>
         </div>
         <div class="feature">
-            <h3>Echtzeit-Analyse</h3>
-            <p>Verfolge die Leistung deines Bots in Echtzeit und erhalte detaillierte Analysen.</p>
+            <h3>Testing</h3>
+            <p>Alle Strategien und neue Bots testen wir mit historischen Daten (Börsenkursen) und je
+                nach Ergebnis geben wir die Idee wieder auf oder passen die Logik an, optimieren weiter und testen den
+                Bot im Erfolgsfall auf einem Demo Konto mit Live-Daten der Börse. Bestätigt sich der Erfolg,
+                wird mit echtem Geld auf echten Live-Konten weiter getestet.
+                Weist die neu entwickelte Strategie erwartete Gewinne auf, dann lassen wir den
+                Bot auf einer Cloud kontinuierlich laufen, weisen ihm mehr Geld zu und bieten den Bot
+                als Copy-Trading Strategie an.</p>
         </div>
         <div class="feature">
-            <h3>Benutzerfreundlich</h3>
-            <p>Einfach zu konfigurieren und mit einer benutzerfreundlichen Oberfläche.</p>
+            <h3>Following</h3>
+            <p>Die Plattform <b>cTrader</b>, welche Broker zu ihren Kunden zählt, ermöglicht Tradern
+                (den Kunden von Brokern), anderen Handelskonten zu folgen, sofern diese vom
+                Inhaber freigegeben werden. Das nennt man Copy Trading, weil das Handelskonto
+                vom Follower mit dem angebotenen Konto verknüpft wird und dessen Käufe und
+                Verkäufe binnen Millisekunden mit dem jeweils zugewiesenem Geldbetrag einfach
+                nachgebildet werden. Dadurch ermöglichen wir anderen Menschen ohne entsprechenden
+                Kapitalmarktkenntnissen oder Zeit für's Traden, unsere Reise mitzubestreiten.
+                Durch eine kleine Performance Management Gebühr auf deine Gewinne haben auch
+                wir etwas davon bzw. können wir dadurch bei unseren Social Bots noch mehr
+                Beiträge für Spenden und soziale Projekte leisten.</p>
         </div>
     </div>
 </section>
 
 
 <!-- cTrader Embed -->
+<!--
 <div id="ctrader-plugin-root" style="width: 100%; height: 1000px; position: relative"></div>
 <script id="init" type="text/javascript" defer src="https://ct.spotware.com/widget.js"></script>
 <script type="text/javascript">
@@ -80,26 +97,18 @@
         runPlugin('ctrader-plugin-root', {"route":"/esp/92234/?lang=de&theme=dark","appConfig":{"strategy":{"showStrategyPromotion":true}}});
     };
 </script>
-
-
-
+-->
 
 <section id="contact">
     <h2>Newsletter (W.I.P)</h2>
-    <p>Interessiert? Abboniere unseren Newsletter, um wichtige Infos nicht zu verpassen!</p>
+    <p>Interessiert? Aboniere unseren Newsletter, um wichtige Infos nicht zu verpassen!</p>
     <form id="newsletter-form">
         <input type="text" id="name" name="name" placeholder="Dein Name" required>
         <input type="email" id="email" name="email" placeholder="Deine E-Mail" required>
-        <button type="submit">Abbonieren</button>
+        <button type="button">Abonnieren</button>
     </form>
 </section>
 
-
-
-<footer>
-    <p>&copy; 2024 Julian Einzinger - Alle Rechte vorbehalten</p>
-</footer>
-
-<script src="index.js"></script>
+<div id="footer"></div>
 </body>
 </html>

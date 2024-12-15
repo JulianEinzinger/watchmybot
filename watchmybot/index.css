@@ -125,13 +125,7 @@ form button {
 
 form button:hover {
     background-color: #00796b;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    cursor: not-allowed;
 }
 
 /* --- Media Queries für Responsiveness --- */
@@ -170,9 +164,5 @@ footer {
 
     form {
         padding: 10px;
-    }
-
-    footer {
-        font-size: 0.8rem; /* Kleinere Schrift im Footer */
     }
 }

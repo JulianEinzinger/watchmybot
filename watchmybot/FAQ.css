@@ -25,17 +25,6 @@ section {
     margin-bottom: 20px;
 }
 
-.hero button {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;

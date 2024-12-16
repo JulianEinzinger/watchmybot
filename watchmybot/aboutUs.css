@@ -39,9 +39,9 @@ body {
     border-radius: 10%;
 }
 
-/* Für Smartphones (480px und kleiner) */
-@media (max-width: 1500px) {
+/* Für Smartphones (500px und kleiner) */
+@media (max-width: 500px) {
 .element {
-    background-color: red;
+    display: block;
 }
 }

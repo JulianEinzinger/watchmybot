@@ -40,7 +40,7 @@ body {
 }
 
 /* Für Smartphones (480px und kleiner) */
-@media (max-width: 480px) {
+@media (max-width: 1500px) {
 .element {
     background-color: red;
 }

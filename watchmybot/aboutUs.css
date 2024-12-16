@@ -38,3 +38,10 @@ body {
     /* rund: border-radius: 50%; */
     border-radius: 10%;
 }
+
+/* Für Smartphones (480px und kleiner) */
+@media (max-width: 480px) {
+.element {
+    background-color: red;
+}
+}

@@ -6,15 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-.cta-button {
-    background-color: #fff;
-    color: #009688;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-
 /* Hero-Bereich */
 .hero {
     background: linear-gradient(to right, #02ccb7, #00423a);
@@ -151,11 +142,6 @@ form button:hover {
 @media (max-width: 480px) {
     #hero h1 {
         font-size: 1.5rem; /* Kleinere Schriftgröße */
-    }
-
-    .cta-button {
-        padding: 8px 15px; /* Kleinere Buttons */
-        font-size: 0.9rem;
     }
 
     section {

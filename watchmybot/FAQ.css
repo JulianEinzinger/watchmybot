@@ -15,6 +15,7 @@ section {
 /* Hero-Bereich */
 .hero {
     background: linear-gradient(to right, #fb2d2d, #490202);
+    background: linear-gradient(to right, #02ccb7, #00423a);
     color: white;
     text-align: center;
     padding: 20px 20px;
@@ -23,17 +24,6 @@ section {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-.hero button {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .container {
@@ -60,6 +50,7 @@ section {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #6a0202;
+    color: #026559;
 }
 
 .faq-item {
@@ -74,6 +65,7 @@ section {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #c81717;
+    color: #03af9d;
 }
 
 .faq-item p {

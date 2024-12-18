@@ -1,0 +1,47 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero-Bereich */
+.hero {
+    background: linear-gradient(to right, #fb2d2d, #490202);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#disclaimer {
+    height: 100%;
+    margin-top: 45px;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+.element{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Dynamische Breite */
+    max-width: 75%; /* Begrenzung */
+    margin: auto; /* Abstand bei Wrap */
+    text-align: center;
+}
+
+.element h3{
+    color: #ae0000;
+}

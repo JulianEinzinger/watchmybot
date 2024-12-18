@@ -5,6 +5,16 @@ footer {
     padding: 10px;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #c6c5c5;
+}
+
 /* Für Smartphones (480px und kleiner) */
 @media (max-width: 480px) {
     footer {

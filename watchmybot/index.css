@@ -6,43 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Hero-Bereich */
-.hero {
-    background: linear-gradient(to right, #02ccb7, #00423a);
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero button {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero button:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
 
 section {
     padding: 20px;
@@ -73,51 +36,6 @@ section {
     transition: .3s;
 }
 
-#about-box{
-    background: linear-gradient(to right, #02ccb7, #00423a);
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 40px); /* Dynamische Breite */
-    max-width: 67%; /* Begrenzung */
-    text-align: center;
-    margin: auto
-}
-
-/* Newsletter-Formular */
-#contact{
-    text-align: center;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px; /* Begrenzung */
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-form button {
-    padding: 10px;
-    background-color: #009688;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 104%;
-}
-
-form button:hover {
-    background-color: #00796b;
-    cursor: not-allowed;
-}
 
 /* --- Media Queries für Responsiveness --- */
 

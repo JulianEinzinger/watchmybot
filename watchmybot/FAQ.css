@@ -6,34 +6,6 @@ body {
     background: #f4f4f4;
 }
 
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px; /* Begrenzung der Breite */
-}
-
-/* Hero-Bereich */
-.hero {
-    background: linear-gradient(to right, #fb2d2d, #490202);
-    background: linear-gradient(to right, #02ccb7, #00423a);
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
 /* FAQ - CSS */
 
 #faq {
@@ -49,8 +21,7 @@ section {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #6a0202;
-    color: #026559;
+    color: var(--title);
 }
 
 .faq-item {
@@ -64,8 +35,7 @@ section {
 .faq-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #c81717;
-    color: #03af9d;
+    color: var(--text);
 }
 
 .faq-item p {

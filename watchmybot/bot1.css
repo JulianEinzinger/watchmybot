@@ -10,16 +10,3 @@ body {
 #content {
     flex-grow: 1;
 }
-
-/* Hero-Bereich */
-.hero {
-    background: linear-gradient(to right, #02ccb7, #00423a);
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
